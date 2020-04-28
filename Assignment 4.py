@@ -1,9 +1,11 @@
-get_nmb = int(input("Please input a number ! "))
-for i in range(2,get_nmb,1):
-    if  get_nmb % i == 0:
-        print(f"{get_nmb} is not a prime number !")
+getnumber = int(input("Please enter a number ? "))
+count = 0
+for i in range(2,getnumber):
+    if getnumber % i ==0:
+        count += 1
     else:
-        print(f"{get_nmb} is a prime number .")
-    break
-
-
+        count += 0
+if count == 0:
+    print(f"{getnumber} is a prime number")
+else:
+    print(f"{getnumber} is not a prime number")
